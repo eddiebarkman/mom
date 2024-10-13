@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>In memory of Susan Barkman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +34,7 @@
         max-height:100%;
       }
       .memoryText {
+        position: relative;
         text-align: center;
       }
 
@@ -54,11 +55,16 @@
         line-height: 2;
       }
 
-@media screen and (max-width: 1024px) {
-    .mom img{
-        position: relative;
-      }
+      @media screen and (max-width: 640px) {
+    .mom img {
+        position: absolute; /* instead of relative */
+        bottom: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+    }
 }
+
     </style>
   </head>
   <body>
